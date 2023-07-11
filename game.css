@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "initial", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #8052ec, #d161ff);
+}
+
+:root {
+  --winning-blocks: #000000;
+}
+
+html {
+  font-size: 16px;
+}
+h1 {
+  font-family: initial;
+  font-size: 1.8em;
+  padding: 1em;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  margin: auto auto 0 auto;
+  display: table;
+  margin-bottom: -0px;
+}
+
+.wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.container {
+  width: 70vmin;
+  height: 70vmin;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vmin;
+}
+
+.countWin {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.titleWon {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ffeb3b;
+  font-weight: bold;
+  text-align: center;
+}
+
+.countNumber {
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+.button-option {
+  background: #ffffff;
+  height: 22vmin;
+  width: 22vmin;
+  border: none;
+  border-radius: 8px;
+  font-size: 20vmin;
+  color: #d161ff;
+  box-shadow: 0 0 15px rgb(0, 0, 0, 0.1);
+}
+
+#restart {
+  font-family: initial;
+  font-size: 1em;
+  margin-top: 1em;
+  padding: 1em;
+  border-radius: 8px;
+  background-color: #0a0027;
+  color: white;
+  border: none;
+  position: relative;
+  margin: 0.5em auto 0 auto;
+  display: block;
+}
+
+#rest-count {
+  font-family: initial;
+  font-size: 1em;
+  padding: 0.5em;
+  background-color: #0a0027;
+  color: white;
+  border: 1px #0a0027;
+  margin: auto 0 auto 0;
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+}
+
+.popup {
+  background: linear-gradient(135deg, #8052ec, #d161ff);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 12vmin;
+}
+
+#new-game {
+  font-family: initial;
+  font-size: 0.6em;
+  padding: 0.5em 1em;
+  background-color: #0a0027;
+  color: white;
+  border-radius: 0.2em;
+  border: none;
+}
+
+#message {
+  color: white;
+  text-align: center;
+  font-size: 1em;
+}
+
+.popup.hide {
+  display: none;
+}
